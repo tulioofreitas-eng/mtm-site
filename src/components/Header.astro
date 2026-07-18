@@ -1,0 +1,21 @@
+---
+interface Props {
+  active: 'inicio' | 'empresas' | 'sobre' | 'contato';
+}
+const { active } = Astro.props;
+---
+<header class="site-header">
+  <div class="wrap">
+    <a href="/" class="logo"><img src="/assets/img/mtm-mark.png" alt="MTM Group"></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+    <nav class="main-nav" id="mainNav">
+      <ul>
+        <li><a href="/" class={active === 'inicio' ? 'active' : ''}>Início</a></li>
+        <li><a href="/empresas" class={active === 'empresas' ? 'active' : ''}>Empresas</a></li>
+        <li><a href="/sobre" class={active === 'sobre' ? 'active' : ''}>Sobre</a></li>
+        <li><a href="/contato" class={active === 'contato' ? 'active' : ''}>Contato</a></li>
+      </ul>
+    </nav>
+    <a href="/contato" class="btn btn-outline">Fale conosco</a>
+  </div>
+</header>
