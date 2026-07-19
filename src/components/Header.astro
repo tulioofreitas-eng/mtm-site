@@ -1,6 +1,6 @@
 ---
 interface Props {
-  active: 'inicio' | 'empresas' | 'sobre' | 'contato';
+  active: 'inicio' | 'empresas' | 'sobre' | 'noticias' | 'contato';
 }
 const { active } = Astro.props;
 ---
@@ -13,6 +13,7 @@ const { active } = Astro.props;
         <li><a href="/" class={active === 'inicio' ? 'active' : ''}>Início</a></li>
         <li><a href="/empresas" class={active === 'empresas' ? 'active' : ''}>Empresas</a></li>
         <li><a href="/sobre" class={active === 'sobre' ? 'active' : ''}>Sobre</a></li>
+        <li><a href="/noticias" class={active === 'noticias' ? 'active' : ''}>Notícias</a></li>
         <li><a href="/contato" class={active === 'contato' ? 'active' : ''}>Contato</a></li>
       </ul>
     </nav>

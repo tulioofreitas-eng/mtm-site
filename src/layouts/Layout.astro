@@ -5,7 +5,7 @@ import Footer from '../components/Footer.astro';
 interface Props {
   title: string;
   description: string;
-  active: 'inicio' | 'empresas' | 'sobre' | 'contato';
+  active: 'inicio' | 'empresas' | 'sobre' | 'noticias' | 'contato';
 }
 const { title, description, active } = Astro.props;
 ---
@@ -21,7 +21,7 @@ const { title, description, active } = Astro.props;
   <link rel="apple-touch-icon" href="/assets/img/favicon-180.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
 <body>
