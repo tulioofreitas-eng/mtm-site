@@ -58,7 +58,7 @@ p { color: #565c64; }
   gap: 8px;
   margin-bottom: 18px;
 }
-.eyebrow::before { content: ""; width: 0; height: 0; border-top: 5px solid transparent; border-bottom: 5px solid transparent; border-left: 8px solid var(--laranja); display: inline-block; }
+.eyebrow::before { content: ""; width: 22px; height: 2px; background: var(--laranja); display: inline-block; }
 
 .btn {
   display: inline-flex; align-items: center; gap: 10px;
@@ -99,7 +99,7 @@ p { color: #565c64; }
 .hero .wrap { position: relative; z-index: 2; padding-bottom: 90px; }
 .hero-content { max-width: 760px; }
 .hero .eyebrow { color: var(--laranja-claro); }
-.hero .eyebrow::before { border-left-color: var(--laranja-claro); }
+.hero .eyebrow::before { background: var(--laranja-claro); }
 .hero h1 { color: var(--branco); margin-bottom: 22px; }
 .hero .lead { font-size: 1.1rem; color: var(--cinza-400); max-width: 50ch; margin-bottom: 36px; }
 .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
@@ -207,7 +207,7 @@ p { color: #565c64; }
 .sobre-hero { padding: 130px 0 0; background: var(--grafite-escuro); color: var(--branco); }
 .sobre-hero .wrap { padding-bottom: 90px; }
 .sobre-hero .eyebrow { color: var(--laranja-claro); }
-.sobre-hero .eyebrow::before { border-left-color: var(--laranja-claro); }
+.sobre-hero .eyebrow::before { background: var(--laranja-claro); }
 .sobre-hero h1 { color: var(--branco); max-width: 780px; }
 .sobre-hero p { color: var(--cinza-400); max-width: 60ch; margin-top: 22px; font-size: 1.05rem; }
 .sobre-corpo { padding: 100px 0; }
@@ -285,7 +285,7 @@ p { color: #565c64; }
 .page-header { background: var(--grafite-escuro); color: var(--branco); padding: 150px 0 0; }
 .page-header .wrap { padding-bottom: 80px; }
 .page-header .eyebrow { color: var(--laranja-claro); }
-.page-header .eyebrow::before { border-left-color: var(--laranja-claro); }
+.page-header .eyebrow::before { background: var(--laranja-claro); }
 .page-header h1 { color: var(--branco); max-width: 780px; }
 .page-header p { color: var(--cinza-400); margin-top: 20px; max-width: 56ch; font-size: 1.02rem; }
 
